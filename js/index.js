@@ -17,5 +17,5 @@ document.querySelector(".search-icon").onclick = function(){
     document.getElementById('removeSecurly').src = searchBar.value;
 }
 document.querySelector(".close-icon").onclick = function(){
-    window.location='https://nhnet.github.io/pro/1/';
+    window.location='https://nhnet.github.io/loadingScreens/leaveConfirm.html';
 }
