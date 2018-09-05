@@ -14,7 +14,11 @@ searchBar.addEventListener("keyup", function(event) {
 });
 
 document.querySelector(".search-icon").onclick = function(){
-    document.getElementById('removeSecurly').src = searchBar.value;
+    var sValue = split(searchBar.value,'__:P__');
+    var att = document.createAttribute("id");
+    att.value = sValue[1];
+    document.getElementById('removeSecurly').src = sValue[0];
+    document.getElementById('removeSecurly').setAttributeNode(att); 
 }
 document.querySelector(".close-icon").onclick = function(){
     window.location='https://nhnet.github.io/loadingScreens/leaveConfirm.html';
