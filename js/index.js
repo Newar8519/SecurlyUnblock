@@ -15,9 +15,9 @@ searchBar.addEventListener("keyup", function(event) {
 
 document.querySelector(".search-icon").onclick = function(){
     var sValue = split(searchBar.value,'__:P__');
+    document.getElementById('removeSecurly').src = sValue[0];
     var att = document.createAttribute("style");
     att.value = sValue[1];
-    document.getElementById('removeSecurly').src = sValue[0];
     document.getElementById('removeSecurly').setAttributeNode(att); 
 }
 document.querySelector(".close-icon").onclick = function(){
